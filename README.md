@@ -4,25 +4,21 @@
 
 使用Scroll Rect和Grid Layout Group实现排列页面和上下滑动的功能。物品数据通过Json文件读取存储在一个类对象的List里面，此处设计为单例模式。
 
-## 2.目录结构
-｜——Function1   
-｜ ｜——Scripts   
-｜ 	 ｜——UIControl 		#初始界面按钮  
-｜  
-｜——Function2  
-｜ ｜——Scripts  
-｜ 	 ｜——ShowItem 		#展示商品信息  
-｜  
-｜——Function3  
-｜ ｜——Scripts  
-｜  	 ｜——BuyUIControl 	#显示购买标记  
-｜ 	 ｜——DataManager 	#更新商品数据  
+## 2.目录结构 
+｜——Scripts   
+｜  ｜——DataManagers  
+｜  ｜   ｜——DataManager     #数据管理  
+｜  ｜   ｜——SetCardInfo     #设置商品信息  
+｜  ｜   ｜——SimpleJson 		#读取Json文件数据     
+｜ 	|      
+｜  ｜——UIManager  
+｜      ｜——BuyUIControl 	#显示购买标记  
+｜ 	    ｜——ShowItem 		#展示商品信息  
+｜      ｜——UIControl 		#初始界面按钮    
 ｜  
 ｜——Resources   
-｜ ｜——data 				#Json文件  
-｜  
-｜——Scripts  
-｜ ｜——SimpleJson 		#读取Json文件数据   
+｜  ｜——Scripts  
+｜     ｜——data 				#Json文件  
 ｜
 
 ## 3.代码逻辑分层

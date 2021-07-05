@@ -20,11 +20,11 @@ public class ItemInfo //数据模板类
 
 public class ItemData //数据接收类
 {
-    public List<ItemInfo> dailyProduct;
+    public List<ItemInfo> dailyProduct; //存储Json数据
 }
 
 
-public class SimpleJson : MonoBehaviour
+public class JsonData : MonoBehaviour
 {
     private static ItemData data;
 

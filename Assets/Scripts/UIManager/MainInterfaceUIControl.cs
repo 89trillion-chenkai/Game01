@@ -4,9 +4,9 @@ using UnityEngine.UI;
 /// <summary>
 /// 控制主界面显示
 /// </summary>
-public class UIControl : MonoBehaviour
+public class MainInterfaceUIControl : MonoBehaviour
 {
-    public Image image; //主界面图片
+    public Image image; //主界面图片，需拖拽
 
     void Start()
     {

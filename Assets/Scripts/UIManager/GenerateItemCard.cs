@@ -7,11 +7,16 @@ using UnityEngine.UI;
 /// </summary>
 public class GenerateItemCard : MonoBehaviour
 {
-    public CoinsAndDiamondsData prefabCoins; //金币预制体，需拖拽
-    public CoinsAndDiamondsData prefabDiamonds; //钻石预制体，需拖拽
-    public CardDataManager prefabCards; //卡片预制体，需拖拽
-    public GameObject prefabNone; //未解锁卡片预制体，需拖拽
-    public Transform contentTransform; //卡片排列的背景，需拖拽
+    [SerializeField]
+    private CoinsAndDiamondsData prefabCoins; //金币预制体，需拖拽
+    [SerializeField]
+    private CoinsAndDiamondsData prefabDiamonds; //钻石预制体，需拖拽
+    [SerializeField]
+    private CardDataManager prefabCards; //卡片预制体，需拖拽
+    [SerializeField]
+    private GameObject prefabNone; //未解锁卡片预制体，需拖拽
+    [SerializeField]
+    private Transform contentTransform; //卡片排列的背景，需拖拽
     private ItemData itemData; //存储读取的Json数据
 
     void Start()

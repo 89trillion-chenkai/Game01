@@ -11,7 +11,8 @@ using UnityEngine.UI;
 /// </summary>
 public class CoinsAndDiamondsData : MonoBehaviour
 {
-    public Image buyMaskImage; //购买标记图片，需拖拽
+    [SerializeField]
+    private Image buyMaskImage; //购买标记图片，需拖拽
     private ItemInfo thisIteamInfo;  //存储本卡片的Json数据
     
     void Start()

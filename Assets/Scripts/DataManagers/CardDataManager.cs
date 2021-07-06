@@ -8,10 +8,14 @@ using UnityEngine.UI;
 /// </summary>
 public class CardDataManager : MonoBehaviour
 {
-    public Text name; //物体名字，需拖拽
-    public Text price; //物品价格，需拖拽
-    public Image itemImage; //物品图片，需拖拽
-    public Image buyMaskImage; //购买标记图片，需拖拽
+    [SerializeField]
+    private Text name; //物体名字，需拖拽
+    [SerializeField]
+    private Text price; //物品价格，需拖拽
+    [SerializeField]
+    private Image itemImage; //物品图片，需拖拽
+    [SerializeField]
+    private Image buyMaskImage; //购买标记图片，需拖拽
     private ItemInfo thisIteamInfo; //存储本卡片的信息
 
     void Start()

@@ -6,7 +6,8 @@ using UnityEngine.UI;
 /// </summary>
 public class MainInterfaceUIControl : MonoBehaviour
 {
-    public Image image; //主界面图片，需拖拽
+    [SerializeField]
+    private Image image; //主界面图片，需拖拽
 
     void Start()
     {

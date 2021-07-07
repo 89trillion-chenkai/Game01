@@ -17,12 +17,10 @@ public class ItemInfo //数据模板类
     public int isPurchased; //商品是否已购买，-1和1
 }
 
-
 public class ItemData //数据接收类
 {
     public List<ItemInfo> dailyProduct; //存储Json数据
 }
-
 
 public class JsonData : MonoBehaviour
 {

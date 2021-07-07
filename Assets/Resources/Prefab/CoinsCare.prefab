@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf49a342d257746668c01b955f197126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyMaskImage: {fileID: 4361524}
+  buyMaskImage: {fileID: 4361522}
 --- !u!1 &2578321695076758789
 GameObject:
   m_ObjectHideFlags: 0

@@ -529,7 +529,7 @@ MonoBehaviour:
   name: {fileID: 4395204483396665056}
   price: {fileID: 4395204482635493564}
   itemImage: {fileID: 4395204481920686469}
-  buyMaskImage: {fileID: 397147850}
+  buyMaskImage: {fileID: 397147848}
 --- !u!1 &4395204483396665058
 GameObject:
   m_ObjectHideFlags: 0

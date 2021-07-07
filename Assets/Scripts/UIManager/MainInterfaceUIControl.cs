@@ -7,16 +7,16 @@ using UnityEngine.UI;
 public class MainInterfaceUIControl : MonoBehaviour
 {
     [SerializeField]
-    private Image image; //主界面图片，需拖拽
+    private GameObject image; //主界面图片，需拖拽
 
     void Start()
     {
-        image.gameObject.SetActive(false);
+        image.SetActive(false);
     }
 
     //展示初始主界面
     public void ShowUI()
     {
-        image.gameObject.SetActive(true);
+        image.SetActive(true);
     }
 }

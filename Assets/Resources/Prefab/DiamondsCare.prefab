@@ -527,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf49a342d257746668c01b955f197126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyMaskImage: {fileID: 3793468939073270553}
+  imgBuyMask: {fileID: 3793468939073270553}
 --- !u!1 &3793468939073270553
 GameObject:
   m_ObjectHideFlags: 0

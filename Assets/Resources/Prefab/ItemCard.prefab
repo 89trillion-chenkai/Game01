@@ -526,10 +526,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0afb5ec2da2684e1cb00a0595bfa9dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: {fileID: 4395204483396665056}
-  price: {fileID: 4395204482635493564}
-  itemImage: {fileID: 4395204481920686469}
-  buyMaskImage: {fileID: 397147848}
+  txtName: {fileID: 4395204483396665056}
+  txtPrice: {fileID: 4395204482635493564}
+  imgItemCard: {fileID: 4395204481920686469}
+  imgBuyMask: {fileID: 397147848}
 --- !u!1 &4395204483396665058
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,12 +11,12 @@ using UnityEngine.UI;
 /// </summary>
 public class CoinsAndDiamondsData : MonoBehaviour
 {
-    [SerializeField] private GameObject buyMaskImage; //购买标记图片，需拖拽
+    [SerializeField] private GameObject imgBuyMask; //购买标记图片，需拖拽
     private ItemInfo thisIteamInfo;  //存储本卡片的Json数据
     
     void Start()
     {
-        buyMaskImage.SetActive(false);
+        imgBuyMask.SetActive(false);
     }
     
     //传递物品信息
@@ -28,9 +28,9 @@ public class CoinsAndDiamondsData : MonoBehaviour
     //显示购买标记UI按钮绑定函数
     public void ShowBuyUI()
     {
-        if (buyMaskImage.activeSelf == false)
+        if (imgBuyMask.activeSelf == false)
         {
-            buyMaskImage.SetActive(true);
+            imgBuyMask.SetActive(true);
             thisIteamInfo.isPurchased = 1; //更新购买信息
         }
     }

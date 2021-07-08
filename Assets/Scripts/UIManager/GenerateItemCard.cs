@@ -7,11 +7,11 @@ using UnityEngine.UI;
 /// </summary>
 public class GenerateItemCard : MonoBehaviour
 {
-    [SerializeField] private CoinsAndDiamondsData prefabCoins; //金币预制体，需拖拽
-    [SerializeField] private CoinsAndDiamondsData prefabDiamonds; //钻石预制体，需拖拽
-    [SerializeField] private CardDataManager prefabCards; //卡片预制体，需拖拽
+    [SerializeField] private CoinsAndDiamondsData prefabCoins; //金币预制体的数据管理脚本，需拖拽
+    [SerializeField] private CoinsAndDiamondsData prefabDiamonds; //钻石预制体的数据管理脚本，需拖拽
+    [SerializeField] private CardDataManager prefabCards; //卡片预制体的数据管理脚本，需拖拽
     [SerializeField] private GameObject prefabNone; //未解锁卡片预制体，需拖拽
-    [SerializeField] private Transform contentTransform; //卡片排列的背景，需拖拽
+    [SerializeField] private Transform imgContentTransform; //卡片排列的背景，需拖拽
     private ItemData itemData; //存储读取的Json数据
 
     void Start()
@@ -29,17 +29,17 @@ public class GenerateItemCard : MonoBehaviour
         {
             if (info.type == "1") //金币  
             {
-                CoinsAndDiamondsData coin = Instantiate(prefabCoins, contentTransform, false);
+                CoinsAndDiamondsData coin = Instantiate(prefabCoins, imgContentTransform, false);
                 coin.SendJsonMessage(info); //传递Json数据
             }
             else if (info.type == "2") //钻石    
             {
-                CoinsAndDiamondsData diamond = Instantiate(prefabDiamonds, contentTransform, false);
+                CoinsAndDiamondsData diamond = Instantiate(prefabDiamonds, imgContentTransform, false);
                 diamond.SendJsonMessage(info); //传递Json数据
             }
             else if (info.type == "3") //卡牌
             {
-                CardDataManager card = Instantiate(prefabCards, contentTransform, false);
+                CardDataManager card = Instantiate(prefabCards, imgContentTransform, false);
                 card.SetItemInfo(info); //设置物品信息
             }
         }
@@ -48,7 +48,7 @@ public class GenerateItemCard : MonoBehaviour
         {
             for (int i = 0; i < num; ++i)
             {
-                Instantiate(prefabNone, contentTransform, false);
+                Instantiate(prefabNone, imgContentTransform, false);
             }
         }
     }
